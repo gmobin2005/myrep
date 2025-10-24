@@ -105,7 +105,7 @@ public class SimpleLinkedList {
 
     public static ArrayList<Object> getList(SimpleLinkedList root){
         if(root == null) return null;
-        ArrayList<Object> list = new ArrayList<>();
+        ArrayList<Object> list = new ArrayList<Object>();
         SimpleLinkedList p = root;
         while(p != null){
             list.add(p.getData());
@@ -138,6 +138,7 @@ public class SimpleLinkedList {
             System.out.print(p.getData() + "-> ");
             p = p.next;
         }
+        System.out.println("null");
     }
 
     // getters
